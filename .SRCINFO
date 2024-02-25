@@ -1,18 +1,18 @@
-pkgbase = pgyvpn-bin
+pkgbase = pgyvisitor-bin
 	pkgdesc = Suitable for business personnal long-distance intelligent network access
-	pkgver = 2.3.0
+	pkgver = 6.2.0
 	pkgrel = 1
 	url = https://pgy.oray.com/download/
-	install = pgyvpn-bin.install
+	install = pgyvisitor-bin.install
 	arch = x86_64
 	license = custom
-	provides = pgyvpn-bin
 	conflicts = pgyvpn
+	conflicts = pgyvpn-bin
 	source = LICENSE::https://service.oray.com/question/1820.html
-	source = pgyvpn.service
-	source = PgyVisitor_Ubuntu_2.3.0_X86_64.deb::https://pgy.oray.com/dl/42/download?os=Ubuntu%20Linux(X86_64)
+	source = pgyvisitor.service
+	source = PgyVisitor_6.2.0_x86_64.deb::https://pgy.oray.com/softwares/153/download/2156/PgyVisitor_6.2.0_x86_64.deb
 	sha256sums = SKIP
-	sha256sums = 25995cc8f865139147ced000fea52a8f4dda072addbf9e4a3b18b5c599a8be7f
-	sha256sums = 7fabd22c75ac21f5c23d4682988ddf5832315b97986acb9790370a107349d1ac
+	sha256sums = SKIP
+	sha256sums = e062a592f1f127fa589f6919b3c6e96b71e403854d22d30d75b2cd753c45f2bc
 
-pkgname = pgyvpn-bin
+pkgname = pgyvisitor-bin

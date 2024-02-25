@@ -1,22 +1,21 @@
 # Maintainer: JSpringYC <JSpringYC@gmail.com>
 
-pkgname=pgyvpn-bin
+pkgname=pgyvisitor-bin
 _pkgname=PgyVisitor
-pkgver=2.3.0
+pkgver=6.2.0
 pkgrel=1
 pkgdesc="Suitable for business personnal long-distance intelligent network access"
 arch=('x86_64')
 url="https://pgy.oray.com/download/"
 license=('custom')
-provides=('pgyvpn-bin')
-conflicts=('pgyvpn')
-install=pgyvpn-bin.install
+conflicts=('pgyvpn' 'pgyvpn-bin')
+install=pgyvisitor-bin.install
 source=('LICENSE::https://service.oray.com/question/1820.html'
         "${pkgname%-bin}.service"
-        "${_pkgname}_Ubuntu_${pkgver}_X86_64.deb::https://pgy.oray.com/dl/42/download?os=Ubuntu%20Linux(X86_64)")
+        "${_pkgname}_${pkgver}_${arch}.deb::https://pgy.oray.com/softwares/153/download/2156/${_pkgname}_${pkgver}_${arch}.deb")
 sha256sums=('SKIP'
-            '25995cc8f865139147ced000fea52a8f4dda072addbf9e4a3b18b5c599a8be7f'
-            '7fabd22c75ac21f5c23d4682988ddf5832315b97986acb9790370a107349d1ac')
+            'SKIP'
+            'e062a592f1f127fa589f6919b3c6e96b71e403854d22d30d75b2cd753c45f2bc')
 
 package() {
   tar -xf data.tar.*z -C ${pkgdir}
